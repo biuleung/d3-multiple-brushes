@@ -1,0 +1,20 @@
+<div #ocrImageEditor
+     (keydown)="keyDownFunction($event)"
+     id="ocr-image-editor">
+</div>
+<div class="operations">
+    <div class="">
+        <span>{{imageInfo.name}}</span>
+    </div>
+    <div class="">
+        <button id="zoom-in"
+                class="resize-button">+</button>
+        <button id="zoom-out"
+                class="resize-button">-</button>
+        <button id="zoom-init"
+                class="resize-button">o</button>
+    </div>
+</div>
+<p>The example image is source from: <a
+       href="https://angular-templates.io/product/fully-angular-admin-template">https://angular-templates.io/product/fully-angular-admin-template</a>
+</p>

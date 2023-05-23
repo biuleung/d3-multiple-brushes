@@ -1,0 +1,56 @@
+#ocr-image-editor {
+    width: 70vw;
+    height: 75vh;
+    overflow: auto;
+
+    #svg-container {
+    }
+
+    ::ng-deep {
+        .selected .selection {
+            fill: white;
+            stroke: #1a73e8;
+        }
+
+        .non-selected .selection {
+            fill: white;
+            stroke: #1a73e8;
+            stroke-linecap: round;
+            fill: transparent;
+        }
+
+        .brush.result .selection {
+            stroke: lightblue;
+            fill: rgba(143, 211, 70, 0.1);
+        }
+
+        .brush.result.hover .selection {
+            stroke: lightskyblue;
+            fill: rgba(4, 125, 188, 0.1);
+        }
+
+        .remove-btn {
+            cursor: pointer;
+            stroke: lightcoral;
+            stroke-width: 1;
+            fill: white;
+        }
+
+        .close-x {
+            cursor: pointer;
+            stroke: lightcoral;
+            fill: transparent;
+            stroke-linecap: round;
+            stroke-width: 1;
+        }
+    }
+}
+
+.operations {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-group {
+    right: 0;
+}
